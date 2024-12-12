@@ -10,11 +10,13 @@
             margin: 10px;
         }
         input[type="text"] {
-            width: calc(100% - 80px);
+            width: 100%; /* Make input field take the full width */
+            box-sizing: border-box; /* Ensure padding and border don't exceed width */
             padding: 10px;
             margin: 10px 0;
             border: 1px solid #ddd;
             border-radius: 4px;
+            font-size: 16px; /* Prevent zooming on iPhones */
         }
         button {
             padding: 10px;
@@ -24,6 +26,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 16px; /* Ensure consistent font size for buttons */
         }
         button:hover {
             background-color: #0056b3;
@@ -56,6 +59,7 @@
             border-radius: 5px;
         }
     </style>
+    
 </head>
 <body>
     <h1>Norconsult Grålum - Gruppegenerer</h1>
