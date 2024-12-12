@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruppegenerer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+        }
+        input[type="text"] {
+            width: calc(100% - 80px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            margin: 5px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        li button {
+            background-color: red;
+            padding: 5px 10px;
+        }
+        .group {
+            margin-top: 20px;
+        }
+        .group-item {
+            background-color: #d1ecf1;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Norconsult Grålum - Gruppegenerer</h1>
+    <h4>Legg til deltakere</h4>
+    <div>
+        <input type="text" id="nameInput" placeholder="Skriv navn her">
+        <button onclick="addName()">Legg til</button>
+    </div>
+    <ul id="nameList"></ul>
+    <button onclick="generateGroups()">Lag grupper</button>
+
+    <div id="groupsContainer" class="group"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
